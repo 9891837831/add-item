@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>page title</title>
+    <linkrel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div> <input type="text"
+   <button onclick="addItem(this)">Add</button> </div>
+   <script>
+       function addItem(arg){
+           arg.parentnode.insertAdjacentHtml('afterend','<div><input type="text"><button oneclick="addItem(this)">Add</button>'
+       }
+       function removeItem(arg){
+           arg.parentnode.parentnode.removechild('afterend','<div><input type="text"><button oneclick="addItem(this)">Add</button><button oneclick="removeItem(this)">remove</button>
+       }
+   </script>
+</body>
